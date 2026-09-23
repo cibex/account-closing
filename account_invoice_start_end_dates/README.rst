@@ -1,7 +1,3 @@
-.. image:: https://odoo-community.org/readme-banner-image
-   :target: https://odoo-community.org/get-involved?utm_source=readme
-   :alt: Odoo Community Association
-
 ===============================
 Account Invoice Start End Dates
 ===============================
@@ -17,7 +13,7 @@ Account Invoice Start End Dates
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/license-LGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/licence-LGPL--3-blue.png
     :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
     :alt: License: LGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Faccount--closing-lightgray.png?logo=github
@@ -40,6 +36,12 @@ It also adds an option *Must Have Start/End Dates* on the product form
 error message if you try to post an invoice/move that constains such a
 product on one of its lines and doesn't have start/end dates on that
 line.
+
+On a draft invoice/move, a line is allowed to have only one of the two
+dates : the presence of both dates is only checked when the invoice/move
+is posted. This way, the lines of a draft invoice can be mass-edited
+from the *Journal Items* list view, where the native mass edit writes
+one field at a time.
 
 If you use this module, you may also be interested in several other
 modules:
